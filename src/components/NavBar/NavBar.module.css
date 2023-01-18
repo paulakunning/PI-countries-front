@@ -1,0 +1,28 @@
+.navContainer{
+   padding: 1rem;
+    height: 2.5rem;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    background-color: #9fd3c7;
+    top: 0;
+}
+.linksContainer {
+    display: flex;
+}
+
+.links > a {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+@media screen and (max-width: 576px) {
+    .navContainer {
+        flex-direction: column-reverse;
+        height: 3.5rem;
+    }
+ }

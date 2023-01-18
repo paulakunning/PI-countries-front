@@ -1,0 +1,39 @@
+.pagContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pageBtn, .prevBtn, .backBtn {
+    transition: background-color .3s;
+    padding: 0.8rem;
+    color: #9fd3c7;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border: 1px solid #9fd3c7;
+    outline: none;
+}
+.pageBtn:focus, .pageBtn:active {
+        color: white;
+        background-color: #385170;
+    }
+
+.pageBtn:hover:not(.active), .prevBtn:hover:not(:disabled), .backBtn:hover:not(:disabled) {
+    background-color: #142d4c;
+    color: white;
+    cursor: pointer;
+}
+.prevBtn:disabled, .backBtn:disabled {
+    display: none;
+}
+.isActive {
+    transition: background-color .3s;
+    padding: 0.8rem;
+    color: white;
+    background-color: #142d4c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    border: 1px solid #9fd3c7;
+    outline: none;
+}

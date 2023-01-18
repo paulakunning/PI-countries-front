@@ -1,0 +1,117 @@
+.homeContainer {
+    background-image: url('./homeBg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height: 100vh;
+}
+.cardsContainer {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+}
+.loader {
+    background-image: url('./countriesLoader.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.loader > h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #385170;
+    padding-top: 10%;
+}
+.modalContainer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(190, 18, 18);
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modalContent {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 400px;
+   height: 250px;
+   background-color: white;
+   animation-name: animatetop;
+   animation-duration: 0.6s;
+}
+@keyframes animatetop {
+   from {top: -300px; opacity: 0}
+   to {top: 0; opacity: 1}
+ }
+.modalText{
+   padding: 1rem;
+   align-self: center;
+   text-align: center;
+}
+.modalBtn {
+   padding: 0.5rem;
+   align-self: center;
+}
+.backBtn {
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    color: #9fd3c7;
+    outline: none;
+    border: 1px solid  #9fd3c7;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1.2rem;
+    width: 10rem;
+}
+.backBtn:hover{
+    background-color: #9fd3c7;
+    color: white;
+    outline: none;
+    border: 1px solid  #9fd3c7;
+    cursor: pointer;
+}
+.errorContainer {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    height: 80vh;
+}
+.errorContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 25px;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+.errorBtn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    color: #385170;
+    outline: none;
+    border: 1px solid #385170;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1.2rem;
+    width: 10rem;
+}
+.errorBtn:hover {
+    background-color: #385170;
+    color: white;
+    outline: none;
+    border: 1px solid #385170;
+    cursor: pointer;
+}

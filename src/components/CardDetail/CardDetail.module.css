@@ -1,0 +1,132 @@
+.detail {
+    background: url('./detailBg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+ 
+}
+.detailContainer {
+    background-color: rgba(255, 255, 255, 0.65);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 25px;
+}
+.title {
+    text-align: center;
+    align-self: center;
+}
+.title > img {  
+    align-items: center;
+    padding: 1rem;
+}
+.detailIcons {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.detailIcons > img {
+    width: 50px;
+    height: 50px;
+}
+.detailIcons > p {
+    padding-left: 1rem;
+}
+.btnContainer {
+    align-self: flex-start;
+    padding-right: 20rem;
+}
+.backBtn {
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    color: #9fd3c7;
+    outline: none;
+    border: 1px solid  #9fd3c7;
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1.2rem;
+    width: 10rem;
+}
+.backBtn:hover{
+    background-color: #9fd3c7;
+    color: white;
+    outline: none;
+    border: 1px solid  #9fd3c7;
+    cursor: pointer;
+}
+.modalContainer {
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1rem;
+     font-weight: bold;
+     color: rgb(190, 18, 18);
+     height: 100vh;
+     background-color: gray;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+    background-color: white;
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+}
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+.modalText{
+    padding: 1rem;
+    align-self: center;
+    text-align: center;
+}
+.modalBtn {
+    padding: 0.5rem;
+    align-self: center;
+}
+.actContainer {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2rem;
+    background-color: rgba(255, 255, 255, 0.568);
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 25px;
+    max-height: 800px;
+}
+.actTitle {
+    font-weight: bold;
+    text-align: center;
+}
+.info {
+    display: flex;
+    align-items: center;
+}
+.loader {
+    background-image: url('../Home/countriesLoader.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.loader > h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #385170;
+    padding-top: 10%;
+}

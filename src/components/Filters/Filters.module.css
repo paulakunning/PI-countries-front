@@ -1,0 +1,36 @@
+.filtersContainer  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.filters {
+    padding: 1rem;
+}
+.filters > select {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin-inline: 1rem;
+}
+.clearBtnContainer {
+    padding: 1rem;
+}
+.clearBtn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    outline: none;
+    background-color: white;
+    border: 1px solid  #142d4c;
+    border-radius: 1.2rem;
+    color: #142d4c;
+}
+.clearBtn:hover{
+    background-color: #142d4c;
+    color: white;
+    outline: none;
+    border: 1px solid  #142d4c;
+    cursor: pointer;
+}

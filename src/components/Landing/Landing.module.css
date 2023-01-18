@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.landing {
+    background: url('../Landing/landingBg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landingContainer > h1,.landingContainer > h2 {
+    padding: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.landingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 35rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    background-color:rgba(255, 255, 255, 0.671);
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px -3px #5b85b8;
+    margin: 1.5rem;
+}
+.startBtn {
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    outline: none;
+    color: #385170;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 50%;
+    border: solid 1px white;
+}
+.startBtn:hover {
+    cursor: pointer;
+    background-color: #385170;
+     color: white;
+    border: solid 1px #385170;
+}
+a {
+    text-decoration: none;
+    color: #385170;
+}
+
+@media screen and (max-width: 992px) {
+    .landingContainer > h1,.landingContainer > h2 {
+        font-size: 2rem;
+    }
+}

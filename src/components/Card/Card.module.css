@@ -1,0 +1,31 @@
+.card {
+    width: 250px;
+    height: 250px;
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color:rgba(255, 255, 255, 0.671);
+    box-shadow: 0px 10px 20px -3px rgba(0,0,0,0.1);
+    transition: all 300ms;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 25px;
+    color: #003049;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.card:hover {
+    transform: scale(1.05);
+    border: 2px solid #9fd3c7;
+}
+.card > img {
+max-width: 200px;
+max-height: 100px;
+}
+.card > h2 {
+    padding: 0.8rem;
+}
+.card > p {
+    font-weight: bold;
+}
+
