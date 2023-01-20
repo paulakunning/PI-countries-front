@@ -103,7 +103,7 @@ export default function Detail(props){
         </div>
       </div>
     )}
-    else {
+    else if(!country) {
       return (
           <div className={cd.loader}>
               <h1>Loading...</h1>
