@@ -15,7 +15,6 @@ export default function Home(){
     const filtrado = useSelector(state => state.filtered)
     // Conservamos el estado filtrado cuando volvemos al home
     filtrado.length ? countries = filtrado : countries = countries // eslint-disable-line
-    const error = useSelector(state => state.error)
     const [ order, setOrder ] = useState('') // eslint-disable-line
     const [ currentPage, setCurrentPage ] = useState(1)
     const [ countriesPerPage, setCountriesPerPage ] = useState(10) // eslint-disable-line
@@ -30,10 +29,6 @@ export default function Home(){
     const pagination = (pagenumber) => {
         setCurrentPage(pagenumber)
     }
-    
-    const refreshPage = ()=>{
-        window.location.reload();
-     }
 
     if (countries.length){
         return (
