@@ -22,7 +22,7 @@
 .loader > h1 {
     font-family: 'Montserrat', sans-serif;
     color: #385170;
-    padding-top: 10%;
+    padding-top: 100px;
 }
 .modalContainer {
     font-family: 'Montserrat', sans-serif;
@@ -114,4 +114,9 @@
     outline: none;
     border: 1px solid #385170;
     cursor: pointer;
+}
+@media screen and (max-width: 1023px) {
+    .loader > h1 {
+        padding-top: 150px;
+    }
 }

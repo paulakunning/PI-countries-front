@@ -73,7 +73,7 @@ export function getDetail(id){
         } catch (error) {
             dispatch({
                 type:ERROR,
-                payload: error
+                payload: 'It does not exist a country with that id. Please try again'
             })
         }
     }

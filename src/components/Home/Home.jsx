@@ -35,21 +35,7 @@ export default function Home(){
         window.location.reload();
      }
 
-    if(error){
-        return (
-          <div className={h.homeContainer}>
-            <NavBar />
-            <div className={h.errorContainer}>
-              <div className={h.errorContent}>
-                <h3>{error}</h3>
-                <button className={h.errorBtn} onClick={refreshPage}>
-                  Reload page 
-                </button>
-              </div>
-            </div>
-          </div>
-        );
-    } else if (countries.length){
+    if (countries.length){
         return (
           <div className={h.homeContainer}>
             <NavBar setCurrentPage={setCurrentPage} />

@@ -8,6 +8,7 @@
     position: sticky;
     background-color: #9fd3c7;
     top: 0;
+    z-index: 99;
 }
 .linksContainer {
     display: flex;
@@ -23,6 +24,9 @@
 @media screen and (max-width: 576px) {
     .navContainer {
         flex-direction: column-reverse;
-        height: 3.5rem;
+        height: 5rem;
     }
- }
+    .links {
+        margin: 1rem;
+    }
+}

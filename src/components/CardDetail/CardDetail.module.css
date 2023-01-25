@@ -3,20 +3,14 @@
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
  
 }
 .detailContainer {
     background-color: rgba(255, 255, 255, 0.65);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 500px;
+    max-width: 80%;
     padding: 2rem;
     border-radius: 25px;
 }
@@ -116,6 +110,8 @@
 .info {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .loader {
     background-image: url('../Home/countriesLoader.gif');
@@ -128,5 +124,63 @@
 .loader > h1 {
     font-family: 'Montserrat', sans-serif;
     color: #385170;
-    padding-top: 10%;
+    padding-top: 100px;
 }
+
+
+@media screen and (min-width: 1023px) {
+    .detail {
+        height: 100vh;
+    }
+}
+
+ @media screen and (max-width: 992px) {
+    .info {
+        padding-top: 2rem;
+    }
+    .detail {
+        height: 100vh;
+    }
+    .loader > h1 {
+        padding-top: 150px;
+    }
+ }
+
+ @media screen and (max-width: 576px) {
+    .detail {
+        height: 100%;
+    }
+  }
+ 
+  @media screen and (max-width: 768px) {
+    .info {
+        padding-top: 1rem;
+    }
+    .backBtn{
+        color: white;
+        background-color: #669288;
+        border-color:white;
+        font-size: 1.1rem;
+    }
+    .detail {
+        height: 100vh;
+        padding: 1rem;
+    }
+    .title {
+        font-size: 1rem;
+    }
+    .title > img {
+        max-width: 200px;
+    }
+    .detailIcons > img {
+        width: 30px;
+        height: 30px;
+    }
+    .detailIcons > p {
+        font-size: 1.25rem;
+    }
+    .actContainer{
+        padding: 1.7rem;
+        margin: 0.5rem 0.1rem;
+    }
+ }

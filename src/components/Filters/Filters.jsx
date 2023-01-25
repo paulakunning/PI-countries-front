@@ -38,20 +38,20 @@ export default function Filters({setCurrentPage, setOrder}){
         <div className={fi.filtersContainer}>
             <div className={fi.filters}>
                 <select onChange={(e)=>handleFilterByContinent(e)} >
-                <option disabled > Filter by continent </option>
+                <option hidden > Filter by continent </option>
                 {continentOptions.map(c => (<option key={c} value={c} >{c}</option>))}
                 </select>
                 <select onChange={(e)=> handleFilterByActivities(e)}>
-                <option disabled > Filter by activity </option>
+                <option hidden > Filter by activity </option>
                     <option value='all' key='all'> All </option>
                     {allActivities?.map(act => (<option key={act.id} value={act.name} >{act.name}</option>))}
                 </select>
                 <select onChange={(e)=> handleSort(e)}>
-                    <option disabled > Sort countries </option>
+                    <option hidden > Sort countries </option>
                     <option value='asc' key='asc'> Name: A - Z </option>
                     <option value='desc' key='desc'> Name: Z - A </option>
-                    <option value='popAsc' key='popAsc'> Population ↑  </option>
-                    <option value='popDesc' key='popDesc'> Population ↓ </option>
+                    <option value='popAsc' key='popAsc'> Population 🡩 </option>
+                    <option value='popDesc' key='popDesc'> Population 🡫 </option>
                 </select>
             </div>
             <div className={fi.clearBtnContainer}>

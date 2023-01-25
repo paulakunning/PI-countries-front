@@ -133,6 +133,7 @@ export default function Form(){
             <div className={f.inputContainer} >
                 <label className={f.label}> Name: </label>
                 <input
+                className={f.inputName}
                 type="text"
                 value={input.name}
                 name="name"
@@ -149,7 +150,7 @@ export default function Form(){
                 value={1}
                 onChange={(e) => handleCheckDif(e)}
                 />
-                <label htmlFor="diff1"> Begginer </label>
+                <label className={f.labelRadio} htmlFor="diff1"> Begginer </label>
                 <input
                 type="radio"
                 id="diff2"
@@ -157,7 +158,7 @@ export default function Form(){
                 value={2}
                 onChange={(e) => handleCheckDif(e)}
                 />
-                <label htmlFor="diff2"> Amateur </label>
+                <label className={f.labelRadio} htmlFor="diff2"> Amateur </label>
                 <input
                 type="radio"
                 id="diff3"
@@ -165,7 +166,7 @@ export default function Form(){
                 value={3}
                 onChange={(e) => handleCheckDif(e)}
                 />
-                <label htmlFor="diff3"> Normal </label>
+                <label className={f.labelRadio} htmlFor="diff3"> Normal </label>
                 <input
                 type="radio"
                 id="diff4"
@@ -173,7 +174,7 @@ export default function Form(){
                 value={4}
                 onChange={(e) => handleCheckDif(e)}
                 />
-                <label htmlFor="diff4"> Professional </label>
+                <label className={f.labelRadio} htmlFor="diff4"> Professional </label>
                 <input
                 type="radio"
                 id="diff5"
@@ -181,7 +182,7 @@ export default function Form(){
                 value={5}
                 onChange={(e) => handleCheckDif(e)}
                 />
-                <label htmlFor="diff5"> Expert </label>
+                <label className={f.labelRadio} htmlFor="diff5"> Expert </label>
                 {errors.difficulty && <p className={f.errors}>{errors.difficulty}</p>}
             </div>
             <div className={f.inputContainer}>
@@ -206,7 +207,7 @@ export default function Form(){
                 value={"Summer"}
                 onChange={(e) => handleCheckSeason(e)}
                 />
-                <label htmlFor="seasonChoice1"> Summer </label>
+                <label className={f.labelRadio} htmlFor="seasonChoice1"> Summer </label>
                 <input
                 type="radio"
                 id="seasonChoice2"
@@ -214,7 +215,7 @@ export default function Form(){
                 value={"Autumn"}
                 onChange={(e) => handleCheckSeason(e)}
                 />
-                <label htmlFor="seasonChoice2"> Autumn </label>
+                <label className={f.labelRadio} htmlFor="seasonChoice2"> Autumn </label>
                 <input
                 type="radio"
                 id="seasonChoice3"
@@ -222,7 +223,7 @@ export default function Form(){
                 value={"Spring"}
                 onChange={(e) => handleCheckSeason(e)}
                 />
-                <label htmlFor="seasonChoice3"> Spring </label>
+                <label className={f.labelRadio} htmlFor="seasonChoice3"> Spring </label>
                 <input
                 type="radio"
                 id="seasonChoice4"
@@ -230,7 +231,7 @@ export default function Form(){
                 value={"Winter"}
                 onChange={(e) => handleCheckSeason(e)}
                 />
-                <label htmlFor="seasonChoice4"> Winter </label>
+                <label className={f.labelRadio} htmlFor="seasonChoice4"> Winter </label>
                 {errors.season && <p className={f.errors}>{errors.season}</p>}
             </div>
             <div className={f.inputContainer}>

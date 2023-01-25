@@ -92,7 +92,8 @@ function rootReducer(state = initialState, action){
         case RESET_DETAIL: {
             return {
                 ...state,
-                detail: []
+                detail: [],
+                error: ""
             }
         }   
         default:
