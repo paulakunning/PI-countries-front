@@ -31,6 +31,8 @@ Crear una Aplicación web donde se pueda encontrar la información de distintos 
 DB_USER=usuariodepostgres
 DB_PASSWORD=passwordDePostgres
 DB_HOST=localhost
+DB_NAME=countries
+port=3001
 ```
 
 Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credenciales para conectarte a postgres. 
