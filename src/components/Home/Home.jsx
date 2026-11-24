@@ -13,11 +13,10 @@ export default function Home(){
     const dispatch = useDispatch()
     let countries = useSelector(state => state.countries)
     const filtrado = useSelector(state => state.filtered)
-    // Conservamos el estado filtrado cuando volvemos al home
-    filtrado.length ? countries = filtrado : countries = countries 
-    const [ order, setOrder ] = useState('') 
+    if (filtrado.length) countries = filtrado  
+    const [ , setOrder ] = useState('') 
     const [ currentPage, setCurrentPage ] = useState(1)
-    const [ countriesPerPage, setCountriesPerPage ] = useState(10) 
+    const [ countriesPerPage ] = useState(10)  
     const indexOfLastCountry = currentPage * countriesPerPage
     const indexOfFirstCountry = indexOfLastCountry - countriesPerPage
     const currentCountries = currentPage === 1 ? countries.slice(indexOfFirstCountry, 9) : countries.slice(indexOfFirstCountry, indexOfLastCountry)
