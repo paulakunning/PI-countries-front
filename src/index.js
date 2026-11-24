@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://pi-countries-back.onrender.com/'
+axios.defaults.baseURL = 'https://pi-countries-back-pk.vercel.app/'
 
 ReactDOM.render(
     <Provider store={ store }>
